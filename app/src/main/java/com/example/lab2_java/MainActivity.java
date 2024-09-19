@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void getSum(View view) {
         errorText.setText("");
-        if(!firstNumber.getText().toString().equals("") || !secondNumber.getText().toString().equals("")){
+        if(!firstNumber.getText().toString().equals("") & !secondNumber.getText().toString().equals("")){
             symbol.setText("+");
             Number result = Double.parseDouble(firstNumber.getText().toString()) + Double.parseDouble(secondNumber.getText().toString());
             resultCalc.setText(result.toString());
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void getDif(View view) {
         errorText.setText("");
-        if(!firstNumber.getText().toString().equals("") || !secondNumber.getText().toString().equals("")){
+        if(!firstNumber.getText().toString().equals("") & !secondNumber.getText().toString().equals("")){
             symbol.setText("-");
 
             Number result = Double.parseDouble(firstNumber.getText().toString()) - Double.parseDouble(secondNumber.getText().toString());
@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void getDiv(View view) {
         errorText.setText("");
-        if(!firstNumber.getText().toString().equals("") || !secondNumber.getText().toString().equals("")){
+        if(!firstNumber.getText().toString().equals("") & !secondNumber.getText().toString().equals("")){
             if(!secondNumber.getText().toString().equals("0")){
 
                 symbol.setText("/");
@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void getMulti(View view) {
         errorText.setText("");
-        if(!firstNumber.getText().toString().equals("") || !secondNumber.getText().toString().equals("")){
+        if(!firstNumber.getText().toString().equals("") & !secondNumber.getText().toString().equals("")){
 
             symbol.setText("*");
 
